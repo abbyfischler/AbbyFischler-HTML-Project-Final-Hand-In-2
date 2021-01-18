@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="UTF-8">
+<title>Homepage</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<style>
+  body{
+    padding:50px;
+     margin: 0 0 18px;
+    font-family: "futura-pt";
+    line-height: 1.2;
+    letter-spacing: 0.2em;
+    font-weight: 300;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+  .t1{
+    color:#66ccff;
+    font-weight: bold;
+  }
+  .intro{
+     border: 3px solid;
+  }
+  </style>
+</head>
+<body>
+	<!-- Navigation (Stays on Top) -->
+<div class="w3-top w3-bar">
+  <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+<a href="funny.html" class="w3-bar-item w3-button w3-mobile">Funny</a>
+<a href="fears.html" class="w3-bar-item w3-button w3-mobile">Fears</a>
+<a href="favs.html" class="w3-bar-item w3-button w3-mobile">Favs</a>
+<a href="freebie.html" class="w3-bar-item w3-button w3-mobile">Freebie</a>
+<a href="fav1liner.html" class="w3-bar-item w3-button w3-mobile">Favorite 1-liner</a>
+<a class="w3-bar-item w3-mobile t1">Abby's Website</h1>
+</div>
+<section class="intro">
+  <h1>Welcome to my corner of the web:)</h1>
+  <p>Feel free to click around to learn more about me</p>
+  <a href="designinspo.html">Click here to see my design insporation</a>
+  </section>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <p>i love flowers and photography please find some of my favorite pictures i have taken below</p>
+  <img class="mySlides" src="img_la.jpg" style="width:100%">
+  <img class="mySlides" src="img_ny.jpg" style="width:100%">
+  <img class="mySlides" src="img_chicago.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+
+  
+</body>
+</html>

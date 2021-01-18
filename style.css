@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Style the header */
+.header {
+  padding: 10px 16px;
+  background: #66ccff;
+  color: white;
+  text-align:center;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+
+
+.punchline {
+  display: none;
+}
+    
+.joke:hover > .punchline {
+  display: block;
+  color: red;
+}
+
+.column {
+	float: left;
+	width: 30%;
+	height:400px;
+  margin:10px;
+  border-radius:32px;
+  text-align:center;
+
+}
+/* Clear floats after the columns */
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+	}
+}
+/* Styles pics for each element */
+
+
+* img{
+  width:auto;
+vertical-align: bottom;
+align-self: center;
+  height:250px;
+ 
+}
+
+
+.FFheader {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	padding: 10px;
+}
+
+#favs {
+	background: rgb(46, 98, 196);
+	background: -moz-linear-gradient(0deg, rgba(46, 98, 196, 1) 0%, rgba(253, 120, 45, 1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(46, 98, 196, 1) 0%, rgba(253, 120, 45, 1) 100%);
+	background: linear-gradient(0deg, rgba(46, 98, 196, 1) 0%, rgba(253, 120, 45, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2e62c4", endColorstr="#fd782d", GradientType=1);
+}
+
+.liner{
+  display:inline;
+  text-align:center;
+}
+.fav1liner{
+  text-align:center;
+}
