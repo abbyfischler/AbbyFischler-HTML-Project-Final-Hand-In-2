@@ -8,49 +8,34 @@
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 <style>
 
-  body{
-    padding:50px;
-  }
-  .t1{
-    color:#66ccff;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  .content {
-  padding: 16px;
+body{
+  padding:50px;
+  margin: 0 0 18px;
+  font-family: "futura-pt";
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  font-weight: 300;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
+.t1{
+  color:#66ccff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .column {
 	float: left;
 	width: 30%;
 	height:400px;
-  margin:10px;
+  margin:20px;
   border-radius:32px;
   text-align:center;
-
-}
-/* Clear floats after the columns */
-
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-
+  align-items: center;
+  align-content: center;
 }
 
-.FFheader {
-	font-family: 'Montserrat', sans-serif;
-	text-align: center;
-	padding: 10px;
-}
-#favs {
-	background: rgb(46, 98, 196);
-	background: -moz-linear-gradient(0deg, rgba(46, 98, 196, 1) 0%, rgba(253, 120, 45, 1) 100%);
-	background: -webkit-linear-gradient(0deg, rgba(46, 98, 196, 1) 0%, rgba(253, 120, 45, 1) 100%);
-	background: linear-gradient(0deg, rgba(46, 98, 196, 1) 0%, rgba(253, 120, 45, 1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2e62c4", endColorstr="#fd782d", GradientType=1);
-}
+p{letter-spacing: 0em;}
 
   </style>
 </head>
@@ -69,21 +54,20 @@
 <br>
 
 	<div>
-		<h1 id="favs" class="FFheader">Favs</h1>
+		<h1 class="FFheader">Favs</h1>
 		<div class="Fav">
 			<div class="row">
-				<div class="column" style="background-color:#ffe5d9;">
+				<div class="column" style="background-color:#ffe5d9; border: 10px;">
 				<h2>Sushi</h2>
-				<p>Sushi is the best food ever. Read more why <a>Here</a></p><img height="50%" src=
-				"https://www.nippon.com/en/ncommon/contents/japan-data/169591/169591.jpg" ></div>
+				<p>Sushi is the best food ever. Read more why <a href="https://www.theresident.co.uk/lifestyle-london/health-benefits-of-eating-sushi/">here.</a></p><img height="50%" src="images/sushi.png"></div>
 				<div class="column" style="background-color:#d8e2dc;">
 				<h2>Tiktok</h2>
-				<p>Tiktok is my favorite app I love it! Try it <a>here</a></p><img height="50%" src=
-				"https://i.pinimg.com/736x/a4/58/2d/a4582de5738fc57f5af111af897a7316.jpg" ></div>
+				<p>Tiktok is my favorite app I love it! Try it <a href="https://appgrowthsummit.com/why-tiktok-is-the-best-opportunity-for-mobile-apps-in-2020/">here.</a></p><img height="50%" src=
+				"images/tiktok.png" ></div>
 				<div class="column" style="background-color:#ffcad4;">
 				<h2>Glossier</h2>
-				<p>Glossier is my favorite skincare/makeup compant. Find there website <a>here</a></p><img height="50%" src=
-				"https://cupcakesandcashmere.com/.image/t_share/MTY3ODE2NDk1NjA1MjI4ODE3/92c2d3060d642090afbceca2b210d5c1.jpg" ></div>
+				<p>Glossier is my favorite skincare/makeup compant. Find there website <a href="https://www.forbes.com/sites/pamdanziger/2018/11/07/5-keys-to-beauty-brand-glossiers-success/#:~:text=a%20writer's%20dream).-,Glossier's%20success%20is%20credited%20to%20these%205Cs%3A%20Consumers%2C%20Content%2C,%2C%20Co%2DCreation%2C%20Community.&text=Glossier%20is%20powered%20by%20a,customers%2C%20their%20needs%20and%20wants.&text=%E2%80%9CThe%20Glossier%20customer%20is%20a,their%20life%2C%E2%80%9D%20Davis%20explained.">here</a></p><img height="50%" src=
+				"images/glossier.png" ></div>
 			</div>
 		</div>
 </body>
