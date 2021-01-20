@@ -36,9 +36,14 @@ body{
   }
   </style>
 
-</head>
-<body>
+  <script type="text/javascript">
+        function afunction() {
+          console.log("The URL of this page is: " + window.location.href);
+        }
 
+        </script>
+</head>
+<body onload="afunction();">
 
 	<!-- Navigation (Stays on Top) -->
 <div class="w3-top w3-bar w3-center">
